@@ -5,12 +5,19 @@ var pg = require('pg');
 const {Pool, Client} = require('pg');
 
 const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
-  password: "asd",
-  database: "postgres",
-  port: 32776
+  // host: "localhost",
+  // user: "postgres",
+  // password: "asd",
+  // database: "postgres",
+  // port: 32776
+
+  /* cf instructiuni heroku */
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
+
 
 // var con = pg.pool({
 //   host: "localhost",

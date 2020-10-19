@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  block content
+    form(action='/register_bro', method='POST')
+      div
+        p Bro
+          input(type='text', name='broName')
+          input(type='submit', value='register for broing')
+
+  block content
+    p Send message to Bro
+    form(action='/user_send_bro', method='POST')
+      div(float='right')
+        p Bro
+          input(type='text', name='bro')
+        p OtherBro
+          input(type='text', name='otherBro')
+        p Bro
+          input(type='text', name='broMessage')
+          p Submit
+          input(type='submit', value='Search')
+
+    form(action='/bros_query_send',name="getBros",method='get')
+      div.input
+        input(type="submit",name="getBros", value="Get Bros")
+
+      div.container
+        h3#title
+          p#plot

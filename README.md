@@ -16,6 +16,7 @@ The application is deployed via heroku and a pipeline has been created in order 
 
 The application can be accessed here:
 https://afternoon-mountain-35872.herokuapp.com/
+**NOTE: The application is a PoC and it doesn not check for input integrity. Bad inputs will crash it.
 
 After registering / sending a bruh / showing bros, click back to come back to the html.
 

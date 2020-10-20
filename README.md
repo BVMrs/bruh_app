@@ -12,7 +12,7 @@ The database of choice for this project is PostgreSQL and it was integrated into
 For simplicity reasons, the buttons have been implemented as html forms (as the request body is implicitly created with the name specified in the forms) and thus they redirect a user to the response of the server.
 The previous can be avoided by actually implementing the buttons as *html* buttons (uber description tho (-_-) ) and implementing their onClick methods via a script.
 
-The application is deployed via heroku and a pipeline has been created in order to integrate the deployment with the Main (ex Master - *sad git noises* ) branch of the project and achieve a minimal degree of CI.
+The application is deployed via heroku and a pipeline has been created in order to integrate the deployment with the Main (ex Master - *sad git noises* ) branch of the project in order to achieve a minimal degree of CI.
 
 The application can be accessed here:
 https://afternoon-mountain-35872.herokuapp.com/

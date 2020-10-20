@@ -11,7 +11,7 @@ const pool = new Pool({
   // database: "postgres",
   // port: 32776
 
-  /* cf instructiuni heroku */
+  /* cf instructiuni heroku*/
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
